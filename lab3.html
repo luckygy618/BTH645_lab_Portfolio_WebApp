@@ -96,15 +96,126 @@
           <h2>Lab 3</h2>
 
           <p>This is GuoYu Cao's Lab 3 for BTH645.</p>
+          <div>
+            <p>Audio 1: original audio source</p>
+            <audio
+              loop="false"
+              preload="auto"
+              controls="controls"
+              src="./resource/lab3/Original.mp3"
+            ></audio>
+          </div>
+          <br />
+          <div>
+            <p>Audio 2: GuoYuCao mixed audio source</p>
+            <audio
+              loop="false"
+              preload="auto"
+              controls="controls"
+              src="./resource/lab3/KrisMixed.mp3"
+            ></audio>
+          </div>
         </aside>
 
         <section class="main col-md-9">
           <article>
             <h2>Lab 3 Documents</h2>
 
+            <p><b>Audio Files:</b></p>
             <li>
-              <a href="./resource/lab3/">Lab 3</a>
+              <a
+                href="./resource/lab3/Original.mp3"
+                download="./resource/lab3/Original.mp3"
+                >Original Audio</a
+              >
             </li>
+
+            <li>
+              <a
+                href="./resource/lab3/KrisMixed.mp3"
+                download="./resource/lab3/KrisMixed.mp3"
+                >GuoYuCao Modified Audio</a
+              >
+            </li>
+            <div>
+              <p><b>Discussion</b></p>
+              <p>
+                <b
+                  >(1) The reason of choosing the file format when creating your
+                  audio</b
+                >
+              </p>
+              <p>
+                My files are using mp3 format. I have a source audio file, and I
+                added vocal audio and mixed them as my modified audio. I chose
+                the mp3 format because my audio files are music. And mp3 is the
+                most popular format for music to be played on mobile devices,
+                PCs, and web browsers. Although mp3 is lossy compressed so that
+                it loses some quality, it saves a lot of space and provides
+                better performance for the web browser to load and perform it.
+                And it is really hard for general humans to notice the
+                difference between lossless compressed format such as FLAC and
+                WMA format with mp3 because humans can't hear all sounds in all
+                contexts.
+              </p>
+              <p>
+                <b>(2) The use of audio on your website regarding usability.</b>
+              </p>
+              <p>
+                I provided two audio files and I embedded them into the HTML. So
+                that the user can see them and control the music using the
+                control components provided by HTML. The users can easily
+                play/stop the music and adjust the volume. Besides the play
+                control function, I also provided links to the audios to allow
+                the user to download or save the audios. So the users can easily
+                receive, control and use my web page without facing
+                difficulties.
+              </p>
+
+              <p>
+                <b
+                  >(3) Any thoughts on different audio file formats, e.g., cons,
+                  pros, when to use.</b
+                >
+              </p>
+              <p>
+                The audio files include uncompressed formats like Wav, Aiff,
+                lossless compression formats like FLAC, WMA, and the most
+                popular lossy compression formats such as mp3, Ogg, ACC, M4A.
+                Nowadays, uncompressed and lossless compressed audio is getting
+                more and more popular due to the growth of hardware performance.
+                However, the lossy compressed is still the best choice to use on
+                web applications. Although the lossy compressed audio cuts off
+                some parts during the compression, the file size is usually
+                small. For example, the file size of a general 4 minutes long
+                song is only around 3MB to 5MB. But if using FLAC, it would be
+                45MB. If using lossless compressed audio on a web page as
+                background music or something else, it will need more memory
+                space to store the page and a longer time to load. And due to
+                the quality of the users' speakers and humans' hearing
+                capability, the general people are hard to notice the quality
+                difference between FLAC and mp3 with 320kbps. So, when
+                developers need performance, lossy compression formats like mp3
+                are always the best choice.
+              </p>
+              <p>
+                <b
+                  >(4) Description of your editing on the file, e.g., cutting,
+                  assembly, fadein, fadeout, etc.</b
+                >
+              </p>
+              <p>
+                First, I downloaded the pure music file as my original sound
+                source. Then I open it in Adobe Audition and save it as a
+                soundtrack. Then I sang this song based on this original sound
+                source. Then I record my vocal sound and save it as another
+                soundtrack. Then I use the software to mix these two soundtracks
+                together. And finally exported mixed the sound file and save it
+                in mp3 format. So a song mp3 was created. Then I embedded the
+                mp3 file into my HTML in audio tags and set up the controls
+                attribute, finally the files are playable on my website.
+              </p>
+            </div>
           </article>
         </section>
       </div>
@@ -170,7 +281,7 @@
       <!-- Copyright -->
       <div class="text-white p-3" style="background-color: rgba(0, 0, 0, 0.2)">
         This page was last modified on:
-        <time datetime="2022-02-01 6:08 AM">02/01/2022, 06:08:00 AM </time>
+        <time datetime="2022-02-01 6:08 AM">02/14/2022, 02:05:00 AM </time>
       </div>
       <!-- Copyright -->
     </footer>
