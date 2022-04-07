@@ -118,13 +118,12 @@ function draw() {
     flag = 1;
     y = 500; //reset the missle
     boom(); //display explosion effect
-
     //freeze the draw() to show the explosion longer then continue looping
     setTimeout(function () {
       background(255, 255, 255);
       drawBoat();
       button.show();
-    }, 6000);
+    }, 5000);
     noLoop();
   }
 }
@@ -172,6 +171,7 @@ function drawMissile(x, y) {
   rect(x - 2.5 - 10, y + 15, 5, 25); //draw second fire lines
   rect(x - 2.5 + 10, y + 15, 5, 25); //draw third fire lines
 }
+
             </code>
             </pre>
 
