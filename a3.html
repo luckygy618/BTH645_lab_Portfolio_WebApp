@@ -80,7 +80,7 @@
           <p>Code of sketch_a3.js:</p>
           <pre style="background-color: darkslategray">
             <code style="color:white;">
-             let boat1, boat2, explosion, sound;
+let boat1, boat2, explosion, sound;
 var button,
   flag = 0;
 
@@ -175,40 +175,47 @@ function drawMissile(x, y) {
             </code>
             </pre>
 
-            <p><b>How to use:</b></p>
-            <p>Open Sound Volume on PC. Then click the button in the middle of the canvas. Then an animation and explosion sound effect will be played. Then the button will 
-              disappear during the animation is playing. Wait for several seconds until the animation is finished. Then the button will appear
-              and the application is ready for next run.
+          <p><b>How to use:</b></p>
+          <p>Open Sound Volume on PC. Then click the button in the middle of the canvas. Then an animation and explosion
+            sound effect will be played. Then the button will
+            disappear during the animation is playing. Wait for several seconds until the animation is finished. Then
+            the button will appear
+            and the application is ready for next run.
             </button></p>
 
-            <p><b>Explanation:</b></p>
+          <p><b>Explanation:</b></p>
           <p>
-            First, I used loadImage("image/boat.png") function to load all the images in the preload() function. And I used 
-            loadSound() function to load the sound effect .mp3 file. 
+            First, I used loadImage("image/boat.png") function to load all the images in the preload() function. And I
+            used
+            loadSound() function to load the sound effect .mp3 file.
           </p>
           <p>
             Then in the setup() functioin, I created my canvas and linked it to the HTML <div id="p5canvas"> using
-              mycanvas.parent("p5canvas"). And I created a button using createButton and linked event listener fire() function to the button
-              to listen to the mouse click event. Then I set up the text size and font style.  
-            </p>
+              mycanvas.parent("p5canvas"). And I created a button using createButton and linked event listener fire()
+              function to the button
+              to listen to the mouse click event. Then I set up the text size and font style.
+          </p>
 
           <p>
             Then I made a drawMissile() function to draw the flying missile. In this
             function, I draw a triangle and a rectangle to make the body of the missile. Then
             draw a semi-circle as the wings. And draw 3 small square as the
-            windows and 3 small rectangle as the fire. 
+            windows and 3 small rectangle as the fire.
           </p>
           <p>Then I made a drawBoat() function to draw the boats using image() function.</p>
           <p>
             Then I made a boom() function. This fuction shows the explosion effect when the missle hits the target boat.
             I used image(explosion, 0, 1, 250, 250) to display the explosion image to show the effect.
           </p>
-              <p>
-            Then I made a fire() function. This fuction starts looping the draw() function so that the missile will start moving. And this function
-            plays the sound effect of the explosion. It also hides the button to prevent user click on it during the animation playing. 
+          <p>
+            Then I made a fire() function. This fuction starts looping the draw() function so that the missile will
+            start moving. And this function
+            plays the sound effect of the explosion. It also hides the button to prevent user click on it during the
+            animation playing.
           </p>
           <p>
-            Finally, in the draw() function, I set the background to white for every loop. Then I call drawBoat() function
+            Finally, in the draw() function, I set the background to white for every loop. Then I call drawBoat()
+            function
             to display the two boats.
             Then I call the drawMissile() function to draw the missle. And set the y coordinate to decrease by 8 for
             each loop. Then I check the value of y,
